@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#content {
+    height: 100vh;
+    position: relative;
+    border: 3px solid green; 
+    padding: 0 166px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lists {
+    margin-bottom: 23px;
+}
+#image-side {
+    margin-left: 266px;
+}
+h1 {
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 72px;
+    margin-bottom: 13px;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2D1CF0;
+    list-style: none;
+}
+p {
+    font-family: Source Sans Pro;
+    font-size: 26px;
+}
