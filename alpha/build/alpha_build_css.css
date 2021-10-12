@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
 }
+#text-side {
+    padding: 0 25px;
+}
 .lists {
     margin-bottom: 12px;
 }
