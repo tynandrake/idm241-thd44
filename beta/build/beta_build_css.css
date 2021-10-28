@@ -22,6 +22,28 @@ h1 {
     font-size: 64px;
     margin-bottom: 13px;
 }
+h2 {
+    font-family: Rock Salt;
+    font-size: 28px;
+    line-height: 67px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(100px);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
 ul {
     padding: 0;
     list-style-type: none;
@@ -50,17 +72,24 @@ p {
     width: 160px;
     height: 480px;
     float: left;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
 }
 .image-container {
     background-size: cover;
     background-position: center;
     filter: saturate(0);
-}
-.show {
     display: flex;
+}
+img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
 }
 #image1 {
     background-image: url(heidelberg.jpg);
@@ -75,20 +104,18 @@ p {
     background-image: url(alps.jpg);
 }
 .accordian ul:hover li {
-    width: 20px;
+    width: 40px;
     cursor: pointer;
 }
 .accordian ul li:hover {
-    width: 580px;
+    width: 520px;
 }
 .accordian ul li:hover{
     filter: saturate(1);
 }
-#image-side video {
-    max-width: 572px;
-}
 
-@media only screen and (max-width:631px) {
+
+@media only screen and (max-width:700px) {
     .accordian {
         max-width: 540px;
     }
@@ -102,9 +129,6 @@ p {
     }
     .accordian li img {
         max-width: 540px;
-    }
-    #image-side video{
-        max-width: 450px;
     }
 }
 @media only screen and (max-width:579px) {
@@ -120,9 +144,6 @@ p {
         width: 340px;
     }
     .accordian li img {
-        max-width: 400px;
-    }
-    #image-side video{
         max-width: 400px;
     }
 }
