@@ -19,8 +19,8 @@ imageClick1.addEventListener('click', () => {
 });
 imageClick1.addEventListener('mouseleave', () => {
     textShow1.classList.remove('show'),
-    gradient1.classList.toggle('show')
-});
+    gradient1.classList.remove('show')
+})
 
 imageClick2.addEventListener('click', () => {
     textShow2.classList.toggle('show'),
@@ -28,7 +28,7 @@ imageClick2.addEventListener('click', () => {
 });
 imageClick2.addEventListener('mouseleave', () => {
     textShow2.classList.remove('show'),
-    gradient2.classList.toggle('show')
+    gradient2.classList.remove('show')
 });
 
 imageClick3.addEventListener('click', () => {
@@ -37,7 +37,7 @@ imageClick3.addEventListener('click', () => {
 });
 imageClick3.addEventListener('mouseleave', () => {
     textShow3.classList.remove('show'),
-    gradient3.classList.toggle('show')
+    gradient3.classList.remove('show')
 });
 
 imageClick4.addEventListener('click', () => {
@@ -46,6 +46,6 @@ imageClick4.addEventListener('click', () => {
 });
 imageClick4.addEventListener('mouseleave', () => {
     textShow4.classList.remove('show'),
-    gradient4.classList.toggle('show')
+    gradient4.classList.remove('show')
 });
 
