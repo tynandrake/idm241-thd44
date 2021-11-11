@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#content {
+    position: relative;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#text-side {
+    padding: 0 25px;
+}
+.lists {
+    margin-bottom: 12px;
+}
+h1 {
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 64px;
+    margin-bottom: 13px;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 30px;
+    color: #f01c63;
+    list-style: none;
+}
+p {
+    font-family: Source Sans Pro;
+    font-size: 22px;
+}
+.accordian {
+    max-width: 640px;
+    max-height: 480px;
+    overflow: hidden;
+}
+.accordian ul {
+    width: 2000px;
+}
+.accordian li {
+    position: relative;
+    width: 160px;
+    height: 480px;
+    float: left;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.image-container {
+    background-size: cover;
+    background-position: center;
+    filter: saturate(0);
+}
+.show {
+    display: flex;
+}
+#image1 {
+    background-image: url(heidelberg.jpg);
+}
+#image2 {
+    background-image: url(mont-saint-michel.jpg);
+}
+#image3 {
+    background-image: url(cinca-terra.jpg);
+}
+#image4 {
+    background-image: url(alps.jpg);
+}
+.accordian ul:hover li {
+    width: 20px;
+    cursor: pointer;
+}
+.accordian ul li:hover {
+    width: 580px;
+}
+.accordian ul li:hover{
+    filter: saturate(1);
+}
+#image-side video {
+    max-width: 572px;
+}
+
+@media only screen and (max-width:631px) {
+    .accordian {
+        max-width: 540px;
+    }
+    .accordian li {
+        position: relative;
+        width: 135px;
+        height: 480px;
+    }
+    .accordian ul li:hover {
+        width: 480px;
+    }
+    .accordian li img {
+        max-width: 540px;
+    }
+    #image-side video{
+        max-width: 450px;
+    }
+}
+@media only screen and (max-width:579px) {
+    .accordian {
+        max-width: 400px;
+    }
+    .accordian li {
+        position: relative;
+        width: 100px;
+        height: 300px;
+    }
+    .accordian ul li:hover {
+        width: 340px;
+    }
+    .accordian li img {
+        max-width: 400px;
+    }
+    #image-side video{
+        max-width: 400px;
+    }
+}
