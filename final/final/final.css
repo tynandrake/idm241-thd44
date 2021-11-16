@@ -84,8 +84,16 @@ p {
 .accordian ul li:hover{
     filter: saturate(1);
 }
+#image-side {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
 #image-side video {
     max-width: 572px;
+}
+#final-image {
+    max-width: 527px;
 }
 
 @media only screen and (max-width:631px) {
@@ -106,6 +114,9 @@ p {
     #image-side video{
         max-width: 450px;
     }
+    #final-image {
+        max-width: 450px;
+    }
 }
 @media only screen and (max-width:579px) {
     .accordian {
@@ -123,6 +134,9 @@ p {
         max-width: 400px;
     }
     #image-side video{
+        max-width: 400px;
+    }
+    #final-image {
         max-width: 400px;
     }
 }
