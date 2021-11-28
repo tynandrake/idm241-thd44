@@ -40,6 +40,9 @@ h2 {
     bottom: 0;
     z-index: 1;
 }
+h2:hover {
+    text-decoration: underline;
+}
 .show {
     opacity: 1;
     transform: translateY(0px);
