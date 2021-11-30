@@ -21,6 +21,7 @@ h1 {
     font-weight: 900;
     font-size: 64px;
     margin-bottom: 13px;
+    text-align: center;
 }
 h2 {
     font-family: Rock Salt;
@@ -51,16 +52,16 @@ ul {
     padding: 0;
     list-style-type: none;
 }
-li {
+h3 {
     font-family: Source Sans Pro;
     font-weight: 700;
     font-size: 30px;
     color: #f01c63;
-    list-style: none;
 }
-p {
+li {
     font-family: Source Sans Pro;
     font-size: 22px;
+    list-style: disc;
 }
 .accordian {
     max-width: 640px;
